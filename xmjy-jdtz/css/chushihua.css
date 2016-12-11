@@ -1,0 +1,201 @@
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+p,
+blockquote,
+th,
+td {
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background: #FFFFFF;
+	color: #555555;
+	font-size: 14px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+td,
+th,
+caption {
+	font-size: 14px;
+}
+
+a{
+	text-decoration: none;
+	color: #555555;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+img{
+	border: none;
+}
+
+ol,
+ul,
+li {
+	list-style: none;
+}
+
+html{
+	overflow-y: scroll;
+}
+
+.clearfix:after{
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+.clearfix{
+	*zoom: 1;
+}
+
+.ding{
+	width: 100%;
+	height: 53px;
+	text-align: center;
+}
+
+.ding .topImg{
+	width: 100%;
+	min-width: 1250px;
+	margin: 0 auto;
+	height: 13px;
+	padding: 0;
+	background: url(../img/img/top_llll.png) repeat-x !important;
+	height: 13px;
+}
+
+.daohang{
+	width: 1000px;
+	margin: auto;
+	height: 38px;
+}
+
+.daohang .a_left{
+	width: 128px;
+	height: 38px;
+	display: block;
+	float: left;
+}
+
+.nav{
+	width: 872px;
+	height: 38px;
+	line-height: 38px;
+	position: relative;
+	z-index: 1;
+	float: left;
+}
+
+.nav a{
+	color: #0e0e0e;
+}
+
+.nav .nLi{
+	width: 124.5px;
+	text-align: center;
+	float: left;
+	position: relative;
+	display: inline;
+}
+
+.nav .nLi h3{
+	width: 100%;
+	float: left;
+}
+
+.nav .nLi h3 a{
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.nav .nLi h3 a:hover{
+	background: #A8B4D2;
+	color: #FFFFFF;
+}
+
+.nav .nLi h3 .on{
+	background: #A8B4D2;
+	color: #FFFFFF;
+}
+
+
+/*底部*/
+.bottom_dibu{
+	width: 1200px;
+	height: 75px;
+	margin: 0 auto;
+	text-align: center;
+	border-top: 1px solid #555555;
+	line-height: 18px;
+	color: gray;
+	margin-top: 20px;
+	padding-bottom: 10px;
+	padding-top: 8px;
+}
+
+.bottom_dibu ul{
+	width: 750px;
+	height: 22px;
+	margin: auto;
+}
+
+.bottom_dibu ul li{
+	float: left;
+	width: 79px;
+	height: 100%;
+	border-left: 1px solid #B8B8B8;
+}
+
+.bottom_dibu ul .bottom_dibu_{
+	width: 269px;
+}
+
+.bottom_dibu ul .bottom_dibu_ a{
+	width: 259px;
+}
+
+.bottom_dibu ul li a{
+	display: block;
+	width: 70px;
+	margin: auto;
+	font-size: 14px;
+	text-decoration: none;
+}
+
+.bottom_dibu ul li a:hover{
+	color: #A8B4D2;
+}
+
+.bottom_dibu .line_h {
+	line-height: 20px;
+	font-size: 13px;
+}

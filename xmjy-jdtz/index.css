@@ -1,0 +1,303 @@
+@charset "utf-8";
+.ding {
+	width: 100%;
+	height: 53px;
+	text-align: center;
+}
+
+.ding .topImg {
+	width: 100%;
+	min-width: 1250px;
+	margin: 0 auto;
+	height: 13px;
+	padding: 0;
+	background: url('../img/top_llll.png')repeat-x !important;
+	height: 13px;
+}
+
+.daohang {
+	width: 1000px;
+	margin: auto;
+	height: 38px;
+}
+
+.daohang .a_left {
+	width: 128px;
+	height: 38px;
+	display: block;
+	float: left;
+      }
+
+.nav {
+	width: 872px;
+	height: 38px;
+	line-height: 38px;
+	position: relative;
+	z-index: 1;
+	float: right;
+}
+
+.nav a {
+	color: #0e0e0e;
+}
+
+.nav .nLi {
+	width: 124.5px;
+	text-align: center;
+	float: left;
+	position: relative;
+	display: inline;
+}
+
+.nav .nLi h3 {
+	float: left;
+	width: 100%;
+}
+
+.nav .nLi h3 a {
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.nav .sub {
+	display: none;
+	width: 124.5px;
+	left: 0;
+	top: 34px;
+	position: absolute;
+	background: #A8B4D2;
+	line-height: 26px;
+	padding: 5px 0;
+}
+
+.nav .sub li {
+	zoom: 1;
+}
+
+.nav .sub a {
+	display: block;
+	padding: 0 10px;
+}
+
+.nav .sub a:hover {
+	color: #fff;
+	border-bottom: 1px solid darkgrey;
+}
+
+.nav .on h3 a {
+	background: #A8B4D2;
+	color: #fff;
+}
+
+
+/*焦点图*/
+
+.slideBox {
+	width: 100%;
+	height:420px;
+	overflow: hidden;
+	position: relative;
+}
+
+.slideBox .bd {
+	position: relative;
+	height: 420px;
+	z-index: 0;
+}
+.slideBox .bd ul{
+	width: 100%;
+	height: 420px;
+}
+.slideBox .bd li {
+	zoom: 1;
+	height: 420px;
+	vertical-align: middle;
+}
+
+.slideBox .bd img {
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+
+
+/*焦点图*/
+
+
+/*投资*/
+
+.touzi {
+	width: 1000px;
+	height: 210px;
+	padding: 10px;
+	margin: auto;
+	margin-top: 25px;
+}
+
+.touzi .touzi_left {
+	width: 750px;
+	height: 100%;
+	float: left;
+}
+
+.touzi .touzi_left .touzi_top {
+	margin-top: 0;
+	height: 130px;
+	position: relative;
+}
+
+.touzi .touzi_left .touzi_top .img_lefttop {
+	width: 130px;
+	height: 100%;
+	display: block;
+	float: left;
+}
+
+.touzi .touzi_left .touzi_top .touzi_top_right {
+	width: 605px;
+	height: 100%;
+	float: right;
+	margin-left: 15px;
+}
+
+.touzi .touzi_left .touzi_top .touzi_top_right p a {
+	text-decoration: none;
+	font-size: 16px;
+	font-family: "微软雅黑";
+	font-weight: bold;
+}
+
+.touzi .touzi_left .touzi_top .touzi_top_right .buttom_1 {
+	text-indent: 2em;
+	display: block;
+	margin-top: 25px;
+	line-height: 20px;
+	font-size: 15px;
+	color: #808080;
+	overflow: hidden;
+}
+
+.touzi .touzi_left .touzi_bottom {
+	height: 80px;
+	width: 100%;
+	margin-top: 10px;
+}
+
+.touzi .touzi_left .touzi_bottom ul {
+	width: 100%;
+	height: 100%;
+}
+
+.touzi .touzi_left .touzi_bottom ul li {
+	float: left;
+	line-height: 35px;
+	width: 50%;
+}
+
+.touzi .touzi_left .touzi_bottom ul li a {
+	text-decoration: none;
+	font-size: 13px;
+	overflow: hidden;
+	text-align: left;
+}
+
+.multipleLine {
+	overflow: hidden;
+	position: relative;
+	width: 250px;
+	float: right;
+	height: 100%;
+}
+
+.multipleLine .bd {
+	padding: 10px;
+	overflow: hidden;
+}
+
+.multipleLine .bd ul {
+	overflow: hidden;
+	zoom: 1;
+}
+
+.multipleLine .bd ul li {
+	margin: 0 8px;
+	float: left;
+	display: inline;
+	overflow: hidden;
+	text-align: center;
+}
+
+.multipleLine .bd ul li .pic {
+	text-align: center;
+}
+
+.multipleLine .bd ul li .pic img {
+	width: 93px;
+	height: 93px;
+	display: block;
+	padding: 2px;
+	border: 1px solid #ccc;
+}
+
+.multipleLine .bd ul li .pic a:hover img {
+	border-color: #999;
+}
+
+
+/*投资*/
+
+
+/*底部*/
+
+.bottom_dibu {
+	width: 1200px;
+	height: 75px;
+	margin: 0 auto;
+	text-align: center;
+	border-top: 1px solid #555555;
+	line-height: 18px;
+	color: gray;
+	margin-top: 20px;
+	padding-bottom: 10px;
+	padding-top: 8px;
+}
+
+.bottom_dibu ul {
+	width: 750px;
+	height: 22px;
+	margin: auto;
+}
+
+.bottom_dibu ul li {
+	float: left;
+	width: 79px;
+	height: 100%;
+	border-left: 1px solid #B8B8B8;
+}
+
+.bottom_dibu ul .bottom_dibu_ {
+	width: 269px;
+}
+
+.bottom_dibu ul .bottom_dibu_ a {
+	width: 259px;
+}
+
+.bottom_dibu ul li a {
+	display: block;
+	width: 70px;
+	margin: auto;
+	font-size: 14px;
+	text-decoration: none;
+}
+
+.bottom_dibu ul li a:hover {
+	color: #A8B4D2;
+}
+.bottom_dibu .line_h{
+	line-height: 20px;
+	font-size: 13px;
+}
+
+/*底部*/
