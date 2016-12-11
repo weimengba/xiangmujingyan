@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<script type="text/javascript" src="js/jquery-1.12.3.min.js" ></script>
+		<script type="text/javascript">
+			$(function(){
+				$(".div2").click(function(){
+					$(this).toggleClass("div31").next(".div3").slideToggle(300).siblings(".div3").slideUp("slow");
+				});
+			})
+		</script>
+		<style type="text/css">
+			.container {
+				width: 200px;
+				margin: 0 auto;
+				border: 1px solid gainsboro;
+				text-align: center;
+				padding: 10px 0;
+				font-size: 14px;
+			}
+			.wrapper{
+				width: 100%;
+			}
+			.top-pic img { 
+				margin-left: 0px;
+			}
+			.div2{
+				position: relative;
+				height: 40px;
+				line-height: 40px;
+				width: 100%;
+				border-bottom: 1px dotted #DCDCDC;
+				cursor: pointer;
+			}
+			.jbgl {
+				position: absolute;
+				top: 10px;
+				left: 40px;
+				width: 20px;
+				height: 20px;
+				/*position: absolute;*/
+				background: url(img/1.png);
+				float: left;
+			}
+			.xwzx{
+				position: absolute;
+				top: 10px;
+				left: 40px;
+				width: 20px;
+				height: 20px;
+				position: absolute;
+				background: url(img/2.png);
+			}
+			.zxcp {
+				position: absolute;
+				top: 10px;
+				left: 40px;
+				width: 20px;
+				height: 20px;
+				position: absolute;
+				background: url(img/4.png);
+			}
+			.lmtj {
+				position: absolute;
+				top: 10px;
+				left: 40px;
+				width: 20px;
+				height: 20px;
+				position: absolute;
+				background: url(img/8.png);
+			}
+			.div3 {
+				display: none;
+				padding: 0;
+				margin: 0;
+				width: 100%;
+			}
+			.div31{
+				display: block;
+			}
+			ul {
+				margin: 0;
+				padding: 0;
+			}
+			ul li{
+				font-size: 13px;
+				list-style: none;
+				height: 30px;
+				line-height: 30px;
+				text-align: center;
+				border-bottom: 1px dotted #DCDCDC;
+			}
+			ul li:hover {
+				color: aquamarine;
+			}
+		</style>
+		<title></title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="wrapper">
+				<div class="top-pic">
+					<img src="img/bbb_01.jpg" />
+					<img src="img/bbb_02.jpg" />
+					<img src="img/bbb_03.jpg" />
+					<img src="img/bbb_04.jpg" />
+				</div>
+				<div class="div2">
+					<div class="jbgl"></div>
+					基本管理
+				</div>
+				<div class="div3">
+					<ul>
+						<li>网站配置</li>
+						<li>管理设置</li>
+						<li>导航菜单</li>
+					</ul>
+				</div>
+				<div class="div2">
+					<div class="xwzx"></div>
+					新闻中心
+				</div>
+				<div class="div3">
+					<ul>
+						<li>管理文章</li>
+						<li>文章分类</li>
+						<li>添加文章</li>
+					</ul>
+				</div>
+				<div class="div2">
+					<div class="zxcp"></div>
+					最新产品
+				</div>
+				<div class="div3">
+					<ul>
+						<li>图片管理</li>
+						<li>图片分类</li>
+						<li>添加图片</li>
+					</ul>
+				</div>
+				<div class="div2">
+					<div class="lmtj"></div>
+					栏目添加
+				</div>
+				<div class="div3">
+					<ul>
+						<li>文章系统</li>
+						<li>图片系统</li>
+						<li>添加表单</li>
+						<li>招聘系统</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

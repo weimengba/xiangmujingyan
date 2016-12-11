@@ -1,0 +1,88 @@
+
+<html>
+<head>
+<meta charset="utf-8">
+<title>jQuery简洁实用网站后台导航效果</title>
+<style>
+body{ margin:0;font-family:微软雅黑;}
+.left{ width:200px; height:90%; border:1px solid #ccc ; color:#000; font-size:14px; text-align:center; margin:0 auto;}
+.div1{text-align:center; width:200px; padding-top:10px;}
+.div2{height:40px; line-height:40px;cursor: pointer; font-size:13px; position:relative;border-bottom:#ccc 1px dotted;}
+.jbsz {position: absolute; height: 20px; width: 20px; left: 40px; top: 10px; background:url(img/1.png);}
+.xwzx {position: absolute; height: 20px; width: 20px; left: 40px; top: 10px; background:url(img/2.png);}
+.zxcp {position: absolute; height: 20px; width: 20px; left: 40px; top: 10px; background:url(img/4.png);}
+.lmtj {position: absolute; height: 20px; width: 20px; left: 40px; top: 10px; background:url(img/8.png);}
+.div3{display: none;cursor:pointer; font-size:13px;}
+.div3 ul{margin:0;padding:0;}
+.div3 li{ height:30px; line-height:30px; list-style:none; border-bottom:#ccc 1px dotted; text-align:center;}
+</style>
+</head>
+<body>
+<!-- 代码部分begin -->
+<div class="left">
+<div class="div1">
+<div class="left_top">
+	<img src="img/bbb_01.jpg">
+    <img src="img/bbb_02.jpg" id="2">
+    <img src="img/bbb_03.jpg">
+    <img src="img/bbb_04.jpg">
+</div>
+  <div class="div2">
+  	<div class="jbsz"></div>
+    基本管理
+  </div>
+  <div class="div3">
+	<ul>
+		<li> 网站配置</li>
+		<li> 管理设置</li>
+        <li> 导航菜单</li>
+	</ul>
+  </div>
+  <div class="div2">
+  	<div class="xwzx"></div>
+    新闻中心
+  </div>
+  <div class="div3">
+      <ul>
+		<li> 管理文章</li>
+		<li> 文章分类</li>
+        <li> 添加文章</li>
+      </ul>
+  </div>
+  <div class="div2">
+  	<div class="zxcp"></div>
+    最新产品
+  </div>
+  <div class="div3">
+    <ul>
+		<li>图片管理</li>
+		<li>图片分类</li>
+        <li>添加图片</li>
+    </ul>
+  </div>
+  <div class="div2">
+  	<div class="lmtj"></div>
+    栏目添加
+  </div>
+  <div class="div3">
+     <ul>
+		<li>文章系统</li>
+		<li>图片系统</li>
+        <li>添加表单</li>
+        <li>招聘系统</li>
+     </ul>
+  </div>
+</div>
+</div>
+<!--<script src="http://www.lanrenzhijia.com/ajaxjs/jquery.min.js"></script>-->
+<script type="text/javascript" src="js/jquery-1.12.3.min.js" ></script>
+<script>
+$(function(){
+	$(".div2").click(function(){ 
+		$(this).next("div").slideToggle("slow").siblings(".div3:visible").slideUp("slow");
+	});
+});
+</script>
+<!-- 代码部分end -->
+</body>
+</html>
