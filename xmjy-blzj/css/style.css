@@ -1,0 +1,95 @@
+/**
+ * 编写人：葛小雷
+ * 版权方：微梦吧
+ * 编写日期：2016/11/13
+ */
+html,body {font: normal 100% Helvetica, Arial, sans-serif;color: #646464;margin: 0;width: 100%;height: auto;background-color: #F0F0F0;}
+a:link {color: #666666;text-decoration: none;}
+a:hover {color: #ff0000;text-decoration: none;}
+.top_daohang,.Under {background-color: #FF6600;}
+#big_wrapper {width: 1000px;overflow: hidden;margin-left: auto;margin-right: auto;}
+.xw_lianxi,.xw_xinwen,.xw_chanpin {border-top-color: #FF6600;}
+ul {margin: 0;padding: 0;}
+li,ol {list-style-type: none;margin: 0;padding: 0;}
+
+/* 头部 */
+.big_logo {width: 100%;height: 85px;background-color: #ffffff;}
+.big_logo ul li {float: left;width: 50%;height: 85px;}
+.big_logo ul li span.logo {background: url(../img/logo.png) center center;display: block;height: 85px;width: 400px;float: right;margin-right: 120px;}
+.big_logo ul li span.lofw {display: block;float: right;height: 55px;width: 280px;margin-right: 210px;padding-top: 33px;}
+.big_logo ul li span.lofw ul ol.fw_jt {float: left; height: 20px;width: 15px;background: url(../img/xxp.png) center center no-repeat;text-align: center;}
+.big_logo ul li span.lofw ul ol.fw_kefu {float: left;height: 20px;line-height: 20px;width: 60px;font-size: 12px;color: #333333;text-align: left; background: url(../img/pxx.png) right center no-repeat;margin-left: 2px;}
+/* 导航 */
+.top_daohang {overflow: hidden;width: 100%;}
+#jsddm {width: 1000px;margin: 0 auto;}
+#jsddm li {float: left;height: 40px;line-height: 40px;color: #FFFFFF;}
+
+#jsddm li a {color: #FFFFFF;text-align: center;width: 120px;line-height: 40px;display: block;height: 40px;font-size: 14px;}
+#jsddm li a:hover {background: url(../img/jt.png) center 34px no-repeat;background-color: #EC4D00;}
+#jsddm li ul {margin: 0;z-index: 1000;padding: 0;position: absolute;visibility: hidden;width: 120px;filter: alpha(opacity=60);opacity: 0.6;color: #FFFFFF;background-color: #000000;font-size: 13px;}
+#jsddm li ul li {float: none;display: inline;}
+#jsddm li ul li a {width: auto;color: #FFFFFF;background-color: #000000;}
+#jsddm li ul li a:hover {background-color: #333333;}
+
+/* 轮换图 */
+.top_luhuan {height: 341px;overflow: hidden;position: relative;visibility: inherit;margin-bottom: 18px;}
+
+/* 新闻动态  */
+.xw_xinwen ul li.xw_Name {border-bottom: thin solid #CCCCCC;font-size: 16px;font-weight: bold;color: #333333;text-indent: 10px;height: 25px;padding-top: 5px;}
+.xw_xinwen ul li span {font-size: 12px;color: #DDD;display: block;height: 20px;line-height: 20px;float: right;margin-right: 10px;}
+.top_xinwen {height: 300px;width: 35%;margin-bottom: 12px;display: inline-block;float: left;}
+.xw_xinwen {background: #FFFFFF;float: left;height: 290px;width: 100%;border-top: 3px solid #FF6600;border-bottom: thin solid #CCCCCC;border-left: thin solid #CCCCCC;border-right: thin solid #CCCCCC;}
+.xw_chanpin {background-color: #FFFFFF;float: left;height: 290px;width: 39.3%;border: thin solid #CCCCCC; border-top: 3px solid #FF6600;margin-left: 14px;margin-right: 14px;display: inline-block;}
+.xw_lianxi {background-color: #FFFFFF;float: left;height: 120px;width: 22%;border: thin solid #CCCCCC; border-top: 3px solid #FF6600;}
+.xw_lxTel {background-color: #FFFFFF;float: left;height: 155px;width: 22%;border: thin solid #CCCCCC;margin-top: 12px;}
+.xw_liebiao a {color: #333333;}
+
+/*产品中心*/
+.xw_xw1 {height: 285px;width: 93%;margin: 5px auto auto;}
+.xw_xw1 ul li.xw_Name {border-bottom: thin solid #CCCCCC;font-size: 16px;font-weight: bold;color: #333333;text-indent: 10px;height: 25px;padding-top: 5px;}
+.xw_xw1 ul li span {font-size: 12px;color: #DDD;display: block;height: 20px;float: right;margin-right: 10px;}
+.cp_abc {width: 100%;overflow: hidden;padding-top: 10px;}
+.cp_abc li {float: left;width: 50%;}
+.cp_abc li span.cp_abcimag {text-align: center;display: block;width: 100%;height: 150px;}
+.cp_name li {width: 100%;}
+.cp_name li.cp_abcName {font-size: 14px;color: #FF0000;line-height: 16px;margin-bottom: 15px;margin-top: 8px;}
+.cp_name li.cp_abcnoct {font-size: 12px;color: #666666;margin-bottom: 5px;text-indent: 25px;line-height: 18px;width: 185px;overflow: hidden;}
+.cp_name li.cp_gengduo {font-size: 12px;color: #FF0000;text-align: left;}
+.xw_xw1 ul li.cp_lrixin {height: 25px;width: 100%;margin-top: 35px;border: thin solid #CCCCCC;display: block;background: url(../img/ccp.png) repeat;}
+.cp_neixin li {line-height: 25px;background: url(../img/ppxc.png) right 7px no-repeat;float: left;height: 25px;width: 33.33%;font-size: 13px;color: #333333;text-align: center;}
+/*新闻动态*/
+.xw_xinwen ul li.xw_Name {border-bottom: thin solid #CCCCCC;}
+.xw_xinwen ul li.xw_liebiao {background: url(../img/xxp.png) no-repeat 2px 10px;height: 25px;width: 100%;text-indent: 12px;font-size: 12px;color: #666666;line-height: 25px;}
+/*.xw_xinwen ul li.xw_liebiao span {color: #999;margin-top: -0px;}*/
+.xw_xinwen ul li.xw_liebiao span {font-size: 12px;color: #DDDDDD;display: block;height: 20px;float: right;margin-right: 10px;}
+.xw_xinwen ul li.xw_images {border-bottom: thin dashed #CCCCCC;position: relative;height: 100px;margin-bottom: 10px;}
+.xw_xinwen ul li span.xw_span {float: left;width: 100px;height: 80px;margin-bottom: 7px;margin-top: 7px;}
+.xw_xinwen ul li span.xw_neirong {float: left;width: 205px;height: 80px;margin-top: 7px;margin-bottom: 7px;}
+.xw_no1 li.cw_abcName {font-size: 14px;color: #FF0000;line-height: 16px;margin-bottom: 5px;}
+.xw_no1 li.cw_abcnoct {font-size: 12px;color: #666666;margin-bottom: 5px;text-indent: 25px;line-height: 18px;}
+.xw_no1 li.cw_gengduo {font-size: 12px; color: #FF0000;margin-right: 20px;margin-top: 10px;text-align: left;}
+/*咨询热线所在列*/
+.xw_lianxi img {width:100%;height:100%;}
+.xw_lxName {width: 90%;height: 145px;margin-top: 9px;margin-left: auto;margin-right: auto;}
+.xw_lxName li.lx_nameA {height: 20px;width: 100%;padding-top: 4px;border: thin solid #CCCCCC;text-indent: 15px;color: #666666;font-size: 14px;background: url(../img/ccp.png) repeat;}
+.xw_lxName li.lx_nameB {padding-left: 10px;margin-top: 15px;line-height: 10px;}
+/*Under*/
+.Under {height: 30px;width: 100%;}
+.Under li.Ur_dizhi {float: left;width: 50%;font-size: 12px;height: 30px;line-height: 30px;text-indent: 25px;}
+.Under li.Ur_caidan {float: left;height: 30px;font-size: 12px;width: 50%;line-height: 30px;}
+.Ur_cd {float: right;margin-right: 20px;color: #FFFFFF;}
+.Ur_cd ul li {float: left;width: 65px;text-align: center;}
+.Ur_cd ul li.Ur_cdA {background: url(../img/pxx.png) left center no-repeat;}
+.Ur_cd ul li a {color: #FFFFFF;}
+.Ur_cd ul li a:hover {color: #FF0000;}
+.Under_B {height: 40px;width: 100%;background-color: #FFFFFF;border: thin solid #CCCCCC;border-top: none;}
+.Under_B li.BACDE {float: left;width: 50%;color: #333333;line-height: 40px;font-size: 12px;text-indent: 20px;}
+.Under_B li.BAPPP {float: left;width: 47%;line-height: 40px;color: #333333;font-size: 12px;text-align: right;}
+
+
+
+
+
+
+
+

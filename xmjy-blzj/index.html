@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="css/style.css" />
+		<script type="text/javascript" src="js/jquery-1.12.3.min.js" ></script>
+		<script type="text/javascript" src="js/jquery.bxslider.min.js" ></script>
+		<script type="text/javascript" src="js/1.js" ></script>
+		<script type="text/javascript"> 
+		//  图片轮播	
+			$('.bxslider1').bxSlider({
+			    auto:true,
+			    infiniteLoop: true,
+			    hideControlOnEnd: true
+			});	
+		//	输入悬停导航条
+			$('#jsddm > li').bind('mouseover', function(){
+				$('ul',this).css('visibility','visible');
+			});
+			$('#jsddm > li').bind('mouseout', function(){
+				$('ul',this).css('visibility','hidden');
+			});
+		</script>
+		<script type="text/JavaScript">
+		   function toggle(targetid){
+	 		document.getElementById("div"+targetid).style.display="block";        
+		 	for(var i =1;i<=4;i++){
+				if(targetid != i){
+					document.getElementById("div"+i).style.display="none";
+				}
+			}
+		}
+		   
+		function blurtitle(v){ //鼠标滑过显示内容方法
+			for(var i=0;i<5;i++){ //以3个标题举例
+				if("title"+i == v.id){ //当前循环的i如果是正确的标题，将内容的display设为block，即显示
+					document.getElementById("content"+i).style.display = "block";
+				}else{ //当前循环的i是其他标题，将内容设为none，即隐藏
+					document.getElementById("content"+i).style.display = "none"; 
+				}
+			}
+		}
+		</script>	
+	</head>s
+	<body>
+		<div class="big_logo">
+			<ul>
+				<li><span class="logo"></span></li>
+				<li>
+					<span class="lofw">
+						<ul>
+							<ol class="fw_jt"></ol>
+							<ol class="fw_kefu"><a href="">用户登录</a></ol>
+                            <ol class="fw_kefu"><a href="">用户注册</a></ol>
+                            <ol class="fw_kefu"><a href="">联系我们</a></ol>
+                            <ol class="fw_kefu"><a href="">服务热线</a></ol>
+						</ul>
+					</span>
+				</li>
+			</ul>
+		</div>
+		<!--导航-->
+		<div class="top_daohang">
+			<ul id="jsddm">
+				<li class="top_dh"><a href="#">首页</a></li>
+				<li class="top_dh"><a href="#">关于我们</a>
+					<ul>
+						<li><a href="#">公司简介</a></li>
+	                    <li><a href="#">品牌文化</a></li>
+	                    <li><a href="#">总经理致辞</a></li>
+	                    <li><a href="#">荣誉资质</a></li>
+	                    <li><a href="#">组织架构</a></li>
+					</ul>
+				</li>
+				<li class="top_dh"><a href="#">新闻中心</a>
+					<ul>
+	                	<li><a href="#">企业新闻</a></li>
+	                    <li><a href="#">行业新闻</a></li>
+	                    <li><a href="#">酷文分享</a></li>
+	                    <li><a href="#">公告通知</a></li>
+	                </ul> 
+				</li>
+				<li class="top_dh"><a href="#">产品中心</a>
+	            	<ul>
+	                	<li><a href="#">产品分类1</a></li>
+	                    <li><a href="#">产品分类2</a></li>
+	                    <li><a href="#">产品分类3</a></li>
+	                    <li><a href="#">产品分类4</a></li>
+	                </ul> 
+	            </li>
+	            <li class="top_dh"><a href="#">人力资源</a>
+	            	<ul>
+	                	<li><a href="#">人才理念</a></li>
+	                    <li><a href="#">社会招聘</a></li>
+	                    <li><a href="#">校园招聘</a></li>
+	                </ul> 
+	            </li>
+	            <li class="top_dh"><a href="#">联系我们</a></li>
+	            <li class="top_fx">
+	            	<span class="fx_xl"></span>
+	                <span class="fx_wx"></span>
+	            </li>
+			</ul>
+		</div>
+		
+		<div id="big_wrapper">
+			<!--轮换图调用-->
+			<div class="top_luhuan">
+				<div id="banner">
+					<ul class="bxslider1">
+						<li><img src="img/1.png" alt="" /></li>
+						<li><img src="img/2.png" alt="" /></li>
+						<li><img src="img/3.png" alt="" /></li>
+						<li><img src="img/4.png" alt="" /></li>
+						<li><img src="img/5.png" alt="" /></li>
+					</ul>
+				</div>
+			</div>
+			<div style="clear: both;"></div>
+			<!--新闻动态-->
+			<div class="top_xinwen">
+				<div class="xw_xinwen">
+					<ul>
+						<li class="xw_Name">新闻动态<span class="xw_gd">Learn More >></span></li>
+						<li class="xw_liebiao" onmouseover="javascript:blurtitle(this)" id="title0">
+							<a href="">建国60周年工程机械行业成就</a><span>2016.11.13</span>
+						</li>
+						<li class="xw_images" id="content0" style="display: block;">
+							<span class="xw_span"><img src="img/xw.png" /></span>
+							<span class="xw_neirong">
+								<div class="xw_no1">
+									<ul>
+                                        <li class="cw_abcName">建国60周年工程机械行业成就</li>
+                                        <li class="cw_abcnoct">年工程机械行业是我国装备制造业的重要的组成部分...</li>
+                                        <li class="cw_gengduo">Learn More >></li>  
+                                    </ul>
+								</div>
+							</span>
+						</li>
+						<li class="xw_liebiao" onmouseover="javascript:blurtitle(this)" id="title1">
+							<a href="">建国60周年工程机械行业成就</a><span>2016.11.13</span>
+						</li>
+              			<li class="xw_images" id="content1" style="display:none">
+                            <span class="xw_span"><img src="img/xw.png" /></span>
+                            <span class="xw_neirong">
+                                <div class="xw_no1">
+                                    <ul>
+                                        <li class="cw_abcName">建国60周年工程机械行业成就</li>
+                                        <li class="cw_abcnoct">年工程机械行业是我国装备制造业的重要的组成部分...</li>
+                                        <li class="cw_gengduo">Learn More >></li>  
+                                    </ul>
+                                </div>       	
+                            </span>
+                    	</li>
+						<li class="xw_liebiao" onmouseover="javascript:blurtitle(this)" id="title2">
+							<a href="">建国60周年工程机械行业成就</a><span>2016.11.13</span>
+						</li>
+						<li class="xw_images" id="content2" style="display:none">
+                            <span class="xw_span"><img src="img/xw.png" /></span>
+                            <span class="xw_neirong">
+                                <div class="xw_no1">
+                                    <ul>
+                                        <li class="cw_abcName">建国60周年工程机械行业成就</li>
+                                        <li class="cw_abcnoct">年工程机械行业是我国装备制造业的重要的组成部分...</li>
+                                        <li class="cw_gengduo">Learn More >></li>  
+                                    </ul>
+                                </div>       	
+                            </span>
+                    	</li>
+						<li class="xw_liebiao" onmouseover="javascript:blurtitle(this)" id="title3">
+							<a href="">建国60周年工程机械行业成就</a><span>2016.11.13</span>
+						</li>
+               			<li class="xw_images" id="content3" style="display:none">
+                            <span class="xw_span"><img src="img/xw.png" /></span>
+                            <span class="xw_neirong">
+                                <div class="xw_no1">
+                                    <ul>
+                                        <li class="cw_abcName">建国60周年工程机械行业成就</li>
+                                        <li class="cw_abcnoct">年工程机械行业是我国装备制造业的重要的组成部分...</li>
+                                        <li class="cw_gengduo">Learn More >></li>  
+                                    </ul>
+                                </div>       	
+                            </span>
+                        </li>
+						<li class="xw_liebiao" onmouseover="javascript:blurtitle(this)" id="title4">
+							<a href="">建国60周年工程机械行业成就</a><span>2016.11.13</span>
+						</li>
+            		  	<li class="xw_images" id="content4" style="display:none">
+                            <span class="xw_span"><img src="img/xw.png" /></span>
+                            <span class="xw_neirong">
+                                <div class="xw_no1">
+                                    <ul>
+                                        <li class="cw_abcName">建国60周年工程机械行业成就</li>
+                                        <li class="cw_abcnoct">年工程机械行业是我国装备制造业的重要的组成部分...</li>
+                                        <li class="cw_gengduo">Learn More >></li>  
+                                    </ul>
+                                </div>       	
+                            </span>
+                       </li>					
+					</ul>
+				</div>
+			</div>
+			
+			<div class="xw_chanpin">
+				<div class="xw_xw1">
+					<ul>
+						<li class="xw_Name">产品中心<span class="xw_gd">Learn More >></span></li>
+						<div class="cp_abc" id="div1" style="display: block;">
+							<ul>
+								<li><span class="cp_abcimag"><img src="img/xp1.png" /></span></li>
+								<li>
+									<div class="cp_name">
+										<ul>
+	                                    	<li class="cp_abcName">CE650-6 液压挖掘机</li>
+	                                        <li class="cp_abcnoct">年工程机械行业是我国装备制造业的重要的组械行业是我国装备制造业的重械行业是我国部分年工程机械行业是业是我国装备制造我国装备制造业的重要的组成部分.....</li>
+	                                        <li class="cp_gengduo">Learn More >></li>
+	                                    </ul>
+									</div>
+								</li>								
+							</ul>
+						</div>
+						
+						<div class="cp_abc" id="div2" style="display:none">
+	                    	<ul>
+	                        	<li><span class="cp_abcimag"><img src="img/0cf3d7f5.png" /></span></li>
+	                            <li>
+									<div class="cp_name">
+	                                	<ul>
+	                                    	<li class="cp_abcName">梅花抓料机</li>
+	                                        <li class="cp_abcnoct">年工程机械行业是我国装备制造业的重要的组械行业年工程机械行业是我国装备制造业的重要的组械行业年工程机械行业是我国装备制造业的重要的组械行业.....</li>
+	                                        <li class="cp_gengduo">Learn More >></li>
+	                                    </ul>
+	                                </div>
+	                            </li>
+	                        </ul>
+	                    </div>
+						
+						<div class="cp_abc" id="div3" style="display:none">
+	                    	<ul>
+	                        	<li><span class="cp_abcimag"><img src="img/00123.png"/></span></li>
+	                            <li>
+									<div class="cp_name">
+	                                	<ul>
+	                                    	<li class="cp_abcName"> 特种产品</li>
+	                                        <li class="cp_abcnoct">年工程机械行业是我国装备制造业的重要的组械行业年工程机械行业是我国装备制造业的重要的组械行业年工程机械行业是我国装备制造业的重要的组械行业.....</li>
+	                                        <li class="cp_gengduo">Learn More >></li>
+	                                    </ul>
+	                                </div>
+	                            </li>
+	                        </ul>
+	                    </div>
+						
+						<li class="cp_lrixin">
+	                    	<div class="cp_neixin">
+	                        	<ul>
+	                            	<li><a href="#" onMouseMove="toggle('1')">履带式挖掘机</a></li>
+	                                <li><a href="#" onMouseMove="toggle('2')">梅花抓料机</a></li>
+	                                <li><a href="#" onMouseMove="toggle('3')">特种产品</a></li>
+	                            </ul>
+	                        </div>
+	                   </li>					
+					</ul>
+				</div>
+			</div>
+			
+			<div class="xw_lianxi">
+	        	<img src="img/4556.gif" />
+	        </div>
+			
+			<div class="xw_lxTel">
+	        	<div class="xw_lxName">
+            		<ul>
+                    	<li class="lx_nameA">咨询热线</li>
+                        <li class="lx_nameB">
+                        	<font color="#333333" size="1">热线 ：</font><font  size="1">XXXX XXXX</font><p>
+                            <font color="#333333" size="1">QQ ：</font><font  size="1">3093 738084</font><p>
+                            <font color="#333333" size="1">网址 ：</font><font  size="1">microdream8.com</font><p>
+                        </li>
+                    </ul>
+	            </div>
+	        </div>
+			
+		</div>
+		
+		<!--底部-->
+		<div class="Under">
+    		<ul>
+            	<li class="Ur_dizhi">版权所有(2016) 微梦吧</li>
+                <li class="Ur_caidan">
+            		<div class="Ur_cd">
+                    	<ul>
+                    		<li><a href="">人才招聘</a></li>
+                            <li class="Ur_cdA"><a href="">网站地图</a></li>
+                            <li class="Ur_cdA"><a href="">友情链接</a></li>
+                            <li class="Ur_cdA"><a href="">会员登录</a></li>
+                            <li class="Ur_cdA"><a href="">联系我们</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+    	</div>
+    	<div class="Under_B">
+    		<ul>
+            	<li class="BACDE">长春工业大学 © 2016 微梦吧  版权所有</li>
+                <li class="BAPPP">技术支持&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.microdream8.com/" target="_blank">微梦吧</a></li>
+           </ul>    		
+    	</div>
+	</body>
+</html>
